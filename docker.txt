@@ -1,0 +1,18 @@
+
+docker build -t node-server .
+
+docker run --name node-express-container -p 3000:3000 -d node-server
+
+docker compose up -d
+
+docker compose down
+
+docker run --name mysqlContainer -e MYSQL_ROOT_PASSWORD=Mysql@123 -d mysql:latest
+
+docker run --name phpmyadmin -d --link <container>:db -p 82:80 phpmyadmin/phpmyadmin
+
+
+docker exec -it <container id> mysql -uroot -p
+docker exec -it d10bccfe1fc9922ce3e87d6ef28183e2eef4e79581747d60ac72f26de6262b04 mysql -uroot -p
+
+

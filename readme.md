@@ -2,14 +2,24 @@
 
 1. clone the repository
 2. create a .env file in the root directory
-3. add PORT,
+3. add
+
+```
+   PORT=3000
    DB_HOST=mysql
    DB_USER=user
    DB_PASSWORD=Mysql@123
    DB_NAME=mysqltest
-   DB_PORT=3306 in the .env file
+   DB_PORT=3306
+```
 
-4. run `docker compose up`
+in the .env file
+
+4. run
+
+```
+sudo docker-compose up -d
+```
 
 # The endpoints are:
 
